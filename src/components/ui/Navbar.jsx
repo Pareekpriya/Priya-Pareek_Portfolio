@@ -1,6 +1,6 @@
 import About from '@/Pages/About';
 import Home from '@/Pages/Home';
-import { Button } from '@chakra-ui/react';
+import { Button, Box } from '@chakra-ui/react';
 import React, { useState } from 'react'
 
 function Navbar() {
@@ -24,10 +24,10 @@ function Navbar() {
           <Button onClick={()=>setActiveComponent("About")}>
             About
           </Button>
+        <Box>{renderComponent()}</Box>  
         </Box>
   )
      
-  
-}
+  }
 
 export default Navbar
